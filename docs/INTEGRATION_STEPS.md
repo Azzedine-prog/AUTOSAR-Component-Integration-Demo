@@ -50,6 +50,16 @@ A simple `main.c` ties everything together by running both SWCs over several cyc
 
    The console output shows the temperature signal and overheat flag across several RTE cycles.
 
+4. (Optional) Start the Tkinter dashboard for a graphical view of the same
+   simulation:
+
+   ```bash
+   python3 scripts/gui_dashboard.py
+   ```
+
+   The GUI triggers the build step on demand and streams the program output
+   while updating labels and a progress bar for each cycle.
+
 ## Extending the Demo
 
 - Add more SWCs and signals to illustrate additional RTE communication patterns (sender/receiver, client/server).
